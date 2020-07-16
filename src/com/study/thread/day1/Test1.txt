@@ -1,0 +1,27 @@
+Compiled from "Test1.java"
+public class com.study.thread.day1.Test1 {
+  public com.study.thread.day1.Test1();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: sipush        500
+       3: istore_1
+       4: bipush        100
+       6: istore_2
+       7: iload_1
+       8: iload_2
+       9: idiv
+      10: istore_3
+      11: iconst_5
+      12: istore        4
+      14: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+      17: iload_3
+      18: iload         4
+      20: iadd
+      21: invokevirtual #3                  // Method java/io/PrintStream.println:(I)V
+      24: return
+}
