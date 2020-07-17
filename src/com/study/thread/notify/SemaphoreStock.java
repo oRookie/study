@@ -11,7 +11,7 @@ public class SemaphoreStock {
     private Semaphore canProduce = new Semaphore(10);
 
     //可以消费的数量
-    private Semaphore canConsume = new Semaphore(1);
+    private Semaphore canConsume = new Semaphore(0);
 
     private volatile int count = 0;
 

@@ -16,7 +16,7 @@ public class NotifyWait {
                     e.printStackTrace();
                 }
             }
-            System.out.println("p --->" + (++i));
+            System.out.println(Thread.currentThread().getName()+" --->" + (++i));
             isProduced = true;
             MONITOR.notifyAll();
         }
@@ -31,7 +31,7 @@ public class NotifyWait {
                     e.printStackTrace();
                 }
             }
-            System.out.println("c --->" + i);
+            System.out.println(Thread.currentThread().getName()+" --->" + (--i));
             isProduced = false;
             MONITOR.notifyAll();
         }
@@ -46,7 +46,7 @@ public class NotifyWait {
                 public void run() {
                     while (true){
                         try {
-                            Thread.sleep(10l);
+                            Thread.sleep(500l);
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
@@ -55,13 +55,13 @@ public class NotifyWait {
                 }
             }.start();
         });
-        Stream.of("c1","c2","c3","c4").forEach((n)->{
+        Stream.of("c1","c2").forEach((n)->{
             new Thread(n){
                 @Override
                 public void run() {
                     while (true){
                         try {
-                            Thread.sleep(10l);
+                            Thread.sleep(500l);
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }

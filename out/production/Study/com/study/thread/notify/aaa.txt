@@ -1,0 +1,224 @@
+2020-07-16 13:25:30
+Full thread dump Java HotSpot(TM) 64-Bit Server VM (25.131-b11 mixed mode):
+
+"Attach Listener" #18 daemon prio=9 os_prio=31 tid=0x00007fc77f248800 nid=0x5803 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"DestroyJavaVM" #17 prio=5 os_prio=31 tid=0x00007fc77f247800 nid=0x1603 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"c4" #16 prio=5 os_prio=31 tid=0x00007fc77f8c2800 nid=0x5703 waiting on condition [0x0000700008211000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007957d9330> (a java.util.concurrent.Semaphore$NonfairSync)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(AbstractQueuedSynchronizer.java:836)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:997)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1304)
+	at java.util.concurrent.Semaphore.acquire(Semaphore.java:312)
+	at com.study.thread.notify.SemaphoreStock.consume(SemaphoreStock.java:39)
+	at com.study.thread.notify.SemaphoreStock.access$000(SemaphoreStock.java:6)
+	at com.study.thread.notify.SemaphoreStock$2.run(SemaphoreStock.java:69)
+
+   Locked ownable synchronizers:
+	- None
+
+"c3" #15 prio=5 os_prio=31 tid=0x00007fc77f8c2000 nid=0x5603 waiting on condition [0x000070000810e000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007957d92d0> (a java.util.concurrent.Semaphore$NonfairSync)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(AbstractQueuedSynchronizer.java:836)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:997)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1304)
+	at java.util.concurrent.Semaphore.acquire(Semaphore.java:312)
+	at com.study.thread.notify.SemaphoreStock.consume(SemaphoreStock.java:38)
+	at com.study.thread.notify.SemaphoreStock.access$000(SemaphoreStock.java:6)
+	at com.study.thread.notify.SemaphoreStock$2.run(SemaphoreStock.java:69)
+
+   Locked ownable synchronizers:
+	- None
+
+"c2" #14 prio=5 os_prio=31 tid=0x00007fc77f247000 nid=0x5503 waiting on condition [0x000070000800b000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007957d92d0> (a java.util.concurrent.Semaphore$NonfairSync)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(AbstractQueuedSynchronizer.java:836)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:997)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1304)
+	at java.util.concurrent.Semaphore.acquire(Semaphore.java:312)
+	at com.study.thread.notify.SemaphoreStock.consume(SemaphoreStock.java:38)
+	at com.study.thread.notify.SemaphoreStock.access$000(SemaphoreStock.java:6)
+	at com.study.thread.notify.SemaphoreStock$2.run(SemaphoreStock.java:69)
+
+   Locked ownable synchronizers:
+	- None
+
+"c1" #13 prio=5 os_prio=31 tid=0x00007fc77ea22800 nid=0x4203 waiting on condition [0x0000700007f08000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007957d92d0> (a java.util.concurrent.Semaphore$NonfairSync)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(AbstractQueuedSynchronizer.java:836)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:997)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1304)
+	at java.util.concurrent.Semaphore.acquire(Semaphore.java:312)
+	at com.study.thread.notify.SemaphoreStock.consume(SemaphoreStock.java:38)
+	at com.study.thread.notify.SemaphoreStock.access$000(SemaphoreStock.java:6)
+	at com.study.thread.notify.SemaphoreStock$2.run(SemaphoreStock.java:69)
+
+   Locked ownable synchronizers:
+	- None
+
+"p3" #12 prio=5 os_prio=31 tid=0x00007fc77e88b800 nid=0x3f03 waiting on condition [0x0000700007e05000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007957d92d0> (a java.util.concurrent.Semaphore$NonfairSync)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(AbstractQueuedSynchronizer.java:836)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:997)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1304)
+	at java.util.concurrent.Semaphore.acquire(Semaphore.java:312)
+	at com.study.thread.notify.SemaphoreStock.produce(SemaphoreStock.java:20)
+	at com.study.thread.notify.SemaphoreStock.access$100(SemaphoreStock.java:6)
+	at com.study.thread.notify.SemaphoreStock$1.run(SemaphoreStock.java:61)
+
+   Locked ownable synchronizers:
+	- None
+
+"p2" #11 prio=5 os_prio=31 tid=0x00007fc77e889800 nid=0x3e03 waiting on condition [0x0000700007d02000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007957d92d0> (a java.util.concurrent.Semaphore$NonfairSync)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(AbstractQueuedSynchronizer.java:836)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:997)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1304)
+	at java.util.concurrent.Semaphore.acquire(Semaphore.java:312)
+	at com.study.thread.notify.SemaphoreStock.produce(SemaphoreStock.java:20)
+	at com.study.thread.notify.SemaphoreStock.access$100(SemaphoreStock.java:6)
+	at com.study.thread.notify.SemaphoreStock$1.run(SemaphoreStock.java:61)
+
+   Locked ownable synchronizers:
+	- None
+
+"p1" #10 prio=5 os_prio=31 tid=0x00007fc77f245000 nid=0x4503 waiting on condition [0x0000700007bff000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007957d92d0> (a java.util.concurrent.Semaphore$NonfairSync)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(AbstractQueuedSynchronizer.java:836)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:997)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1304)
+	at java.util.concurrent.Semaphore.acquire(Semaphore.java:312)
+	at com.study.thread.notify.SemaphoreStock.produce(SemaphoreStock.java:20)
+	at com.study.thread.notify.SemaphoreStock.access$100(SemaphoreStock.java:6)
+	at com.study.thread.notify.SemaphoreStock$1.run(SemaphoreStock.java:61)
+
+   Locked ownable synchronizers:
+	- None
+
+"Service Thread" #9 daemon prio=9 os_prio=31 tid=0x00007fc780012800 nid=0x4703 runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C1 CompilerThread2" #8 daemon prio=9 os_prio=31 tid=0x00007fc780038000 nid=0x4803 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C2 CompilerThread1" #7 daemon prio=9 os_prio=31 tid=0x00007fc77f878800 nid=0x3a03 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"C2 CompilerThread0" #6 daemon prio=9 os_prio=31 tid=0x00007fc77e87b000 nid=0x4b03 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Monitor Ctrl-Break" #5 daemon prio=5 os_prio=31 tid=0x00007fc77e884800 nid=0x3803 runnable [0x00007000075ed000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	- locked <0x0000000795855cd0> (a java.io.InputStreamReader)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.readLine(BufferedReader.java:324)
+	- locked <0x0000000795855cd0> (a java.io.InputStreamReader)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at com.intellij.rt.execution.application.AppMainV2$1.run(AppMainV2.java:64)
+
+   Locked ownable synchronizers:
+	- None
+
+"Signal Dispatcher" #4 daemon prio=9 os_prio=31 tid=0x00007fc77e82b000 nid=0x3603 runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Finalizer" #3 daemon prio=8 os_prio=31 tid=0x00007fc77f03e000 nid=0x3003 in Object.wait() [0x00007000073e7000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x0000000795588ec8> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+	- locked <0x0000000795588ec8> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:164)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:209)
+
+   Locked ownable synchronizers:
+	- None
+
+"Reference Handler" #2 daemon prio=10 os_prio=31 tid=0x00007fc77f035800 nid=0x2e03 in Object.wait() [0x00007000072e4000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x0000000795586b68> (a java.lang.ref.Reference$Lock)
+	at java.lang.Object.wait(Object.java:502)
+	at java.lang.ref.Reference.tryHandlePending(Reference.java:191)
+	- locked <0x0000000795586b68> (a java.lang.ref.Reference$Lock)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
+
+   Locked ownable synchronizers:
+	- None
+
+"VM Thread" os_prio=31 tid=0x00007fc77e815800 nid=0x5303 runnable 
+
+"GC task thread#0 (ParallelGC)" os_prio=31 tid=0x00007fc77e804800 nid=0x1d07 runnable 
+
+"GC task thread#1 (ParallelGC)" os_prio=31 tid=0x00007fc77f003000 nid=0x1f03 runnable 
+
+"GC task thread#2 (ParallelGC)" os_prio=31 tid=0x00007fc77f003800 nid=0x2b03 runnable 
+
+"GC task thread#3 (ParallelGC)" os_prio=31 tid=0x00007fc77f004000 nid=0x2c03 runnable 
+
+"VM Periodic Task Thread" os_prio=31 tid=0x00007fc780039000 nid=0x4603 waiting on condition 
+
+JNI global references: 324
+
+
+happen before
+程序次序原则
+线程中断原则
+线程终止原则
+volatile原则
+线程启动原则
+对象终结原则
+管理锁原则
