@@ -20,6 +20,7 @@ public class SemaphoreStock {
             canProduce.acquire();
             mutex.acquire();
             ++count;
+            Thread.sleep(500L);
             System.out.println(Thread.currentThread().getName()+"正在生产数据 ---库存剩余："+count);
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -27,28 +28,19 @@ public class SemaphoreStock {
             mutex.release();
             canConsume.release();
         }
-        try {
-            Thread.sleep(500L);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
     }
     private void consume(){
         try {
             canConsume.acquire();
             mutex.acquire();
             --count;
+            Thread.sleep(500L);
             System.out.println(Thread.currentThread().getName()+"正在消费数据 ---库存剩余："+count);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }finally {
             mutex.release();
             canProduce.release();
-        }
-        try {
-            Thread.sleep(500L);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
         }
     }
 
