@@ -4,6 +4,9 @@ import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.IntStream;
 
+/**
+ * 信号量 表示一组凭证，有凭证才可以通行
+ */
 public class TestSemaphore {
     private final Semaphore semaphore = new Semaphore(3);
 
@@ -18,7 +21,6 @@ public class TestSemaphore {
         }finally {
             semaphore.release();
         }
-
     }
 
 
