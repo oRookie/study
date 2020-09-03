@@ -4,6 +4,9 @@ import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 import java.util.stream.Stream;
 
+/**
+ * @author lik
+ */
 public class TestCyclicBarrier {
 
     /**
